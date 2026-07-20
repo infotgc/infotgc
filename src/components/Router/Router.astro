@@ -1,0 +1,49 @@
+---
+import View from "../Page/Page.astro";
+import Hero from "../Hero/Hero.astro";
+import Services from "../Services/Services.astro";
+import Approche from "../Approche/Approche.astro";
+import PourquoiMoi from "../PourquoiMoi/PourquoiMoi.astro";
+import Contact from "../Contact/Contact.astro";
+import Legal from "../Legal/Legal.astro";
+---
+
+<main class="router">
+
+  <section data-page="hero" class="view is-active">
+    <View>
+      <Hero />
+    </View>
+  </section>
+
+  <section data-page="services" class="view">
+    <View>
+      <Services />
+    </View>
+  </section>
+
+  <section data-page="approche" class="view">
+    <View>
+      <Approche />
+    </View>
+  </section>
+
+  <section data-page="pourquoi-moi" class="view">
+    <View>
+      <PourquoiMoi />
+    </View>
+  </section>
+
+  <section data-page="contact" class="view">
+    <View>
+      <Contact />
+    </View>
+  </section>
+
+  <section data-page="legal" class="view">
+    <View>
+      <Legal />
+    </View>
+  </section>
+
+</main>

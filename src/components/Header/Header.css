@@ -1,0 +1,145 @@
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: var(--color-bg-translucent);
+  backdrop-filter: blur(12px);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-sm) 0;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__logo img {
+  display: block;
+  width: clamp(54px, 6vw, 76px);
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.header__nav a {
+  position: relative;
+  font-size: .95rem;
+  color: var(--color-text-nav);
+  transition: color .25s;
+}
+
+.header__nav a:hover {
+  color: var(--color-primary);
+}
+
+.header__nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent-dark);
+  transition: var(--transition);
+}
+
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+.header__cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #D95A20;
+  color: white;
+  padding: var(--space-sm) 1.6rem;
+  border-radius: var(--radius-pill);
+  font-size: .9rem;
+  text-align: center;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.header__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+.header__toggle {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header__toggle span{
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  background: var(--color-primary);
+  transition: var(--transition);
+}
+
+@media (max-width: 900px) {
+
+  .header__inner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .header__toggle {
+    display: block;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #F8F6F1;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+  }
+
+  .header__nav.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .header__cta {
+    max-width: 320px;
+    justify-content: center;
+  }
+
+}

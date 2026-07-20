@@ -1,0 +1,136 @@
+---
+import Section from "../Section/Section.astro";
+import Icon from "../Icons/Icons.astro";
+import Image from "astro/components/Image.astro";
+import pqmoiImage from "../../assets/pourquoi-moi.png";
+---
+
+<Section id="pourquoi-moi" class="why">
+
+  <div class="why__wrapper">
+
+    <div class="why__image">
+
+      <Image
+        src={pqmoiImage}
+        alt="Espace de travail de développement logiciel"
+        width="390"
+        height="496"
+        loading="lazy"
+        decoding="async"
+      />
+
+    </div>
+
+    <div class="why__content">
+
+      <h2>Pourquoi moi</h2>
+
+      <p class="why__intro">
+        Plus de 25 ans d'expérience, des projets variés et des clients satisfaits.
+        Je m'implique à 100% dans chaque projet comme si c'était le mien.
+      </p>
+
+      <div class="why__list">
+
+        <article class="why__item">
+
+          <div class="why__icon">
+
+            <!-- Cible -->
+            <Icon name="target" />
+
+          </div>
+
+          <div>
+
+            <h3>Approche sur mesure</h3>
+
+            <p>
+              Chaque solution est conçue pour répondre précisément
+              à vos besoins, vos contraintes et vos objectifs.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="why__item">
+
+          <div class="why__icon">
+
+            <!-- Communication -->
+            <Icon name="communication" />
+
+          </div>
+
+          <div>
+
+            <h3>Communication claire</h3>
+
+            <p>
+              Des échanges réguliers, une transparence totale sur
+              l'avancement et une réactivité qui vous permettent
+              de garder le contrôle du projet.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="why__item">
+
+          <div class="why__icon">
+
+            <!-- Interlocuteur unique -->
+            <Icon name="person" />
+
+          </div>
+
+          <div>
+
+            <h3>Interlocuteur unique</h3>
+
+            <p>
+              Un interlocuteur unique tout au long du projet,
+              pour des échanges simples, rapides
+              et sans intermédiaires.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="why__item">
+
+          <div class="why__icon">
+
+            <!-- Accompagnement -->
+            <Icon name="support" />
+
+          </div>
+
+          <div>
+
+            <h3>Accompagnement dans la durée</h3>
+
+            <p>
+              Un accompagnement durable pour faire évoluer votre
+              solution au rythme de vos besoins.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <a class="btn" href="#" data-link="approche">
+        En savoir plus sur mon parcours →
+      </a>
+
+    </div>
+
+  </div>
+
+</Section>

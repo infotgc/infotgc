@@ -1,0 +1,146 @@
+---
+import Section from "../Section/Section.astro";
+import Icon from "../Icons/Icons.astro";
+import Image from "astro/components/Image.astro";
+import approcheImage from "../../assets/approche.png";
+---
+
+<Section id="approche" class="approach">
+
+  <div class="approach__wrapper">
+
+    <div class="approach__content">
+
+      <div class="approach__heading">
+
+        <span class="approach__subtitle">
+          Mon approche
+        </span>
+
+        <h3>
+          Une méthode simple,<br>
+          des résultats durables.
+        </h3>
+
+        <p>
+          Chaque projet est différent, mais la méthode reste la même :
+          comprendre vos besoins, concevoir une solution adaptée,
+          développer avec rigueur et vous accompagner dans le temps.
+        </p>
+
+      </div>
+
+      <div class="approach__timeline">
+
+        <article class="approach__step">
+
+          <div class="approach__marker">
+            <Icon name="communication" />
+          </div>
+
+          <div class="approach__content">
+
+            <span class="approach__number">
+              01
+            </span>
+
+            <h4>Écouter</h4>
+
+            <p>
+              Comprendre votre métier, vos attentes et vos contraintes
+              avant de proposer la moindre solution.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="approach__step">
+
+          <div class="approach__marker">
+            <Icon name="target" />
+          </div>
+
+          <div class="approach__content">
+
+            <span class="approach__number">
+              02
+            </span>
+
+            <h4>Concevoir</h4>
+
+            <p>
+              Définir une architecture claire, évolutive et adaptée
+              à vos objectifs avant le développement.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="approach__step">
+
+          <div class="approach__marker">
+            <Icon name="code" />
+          </div>
+
+          <div class="approach__content">
+
+            <span class="approach__number">
+              03
+            </span>
+
+            <h4>Développer</h4>
+
+            <p>
+              Construire une solution robuste, performante et
+              facilement maintenable grâce à un code propre.
+            </p>
+
+          </div>
+
+        </article>
+
+        <article class="approach__step">
+
+          <div class="approach__marker">
+            <Icon name="support" />
+          </div>
+
+          <div class="approach__content">
+
+            <span class="approach__number">
+              04
+            </span>
+
+            <h4>Accompagner</h4>
+
+            <p>
+              Faire évoluer votre application au fil du temps
+              et rester disponible lorsque vos besoins changent.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+    <div class="approach__image">
+
+      <Image
+        src={approcheImage}
+        alt="Planification d'un projet logiciel"
+        width="304"
+        height="640"
+        loading="lazy"
+        decoding="async"
+      />
+
+    </div>
+
+  </div>
+
+</Section>

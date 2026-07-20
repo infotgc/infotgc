@@ -1,0 +1,99 @@
+/* =========================================
+   DESIGN SYSTEM
+========================================= */
+
+:root {
+  /* =========================================
+    TYPOGRAPHIE
+  ========================================= */
+
+  /* Polices */
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Oswald", sans-serif;
+
+  /* =========================================
+    COULEURS
+  ========================================= */
+
+  /* Fond */
+  --color-bg: #F8F6F1;
+  --color-bg-translucent: rgba(247, 244, 239, .92);
+
+  /* Texte */
+  --color-text: #203354;
+  /*--color-text-light: #667085;*/
+  --color-text-light: #4F5F75;
+  --color-text-nav: #3D4F68;
+  
+  /* Bordures */
+  --color-border: #B9B3A9;
+
+  /* Divers */
+  --color-primary: #1D4B91;
+  /*--color-accent-dark: #D95A20;*/
+  --color-accent-dark: #F75E18; /* Hover ou éléments secondaires */
+
+  /* =========================================
+    EFFETS
+  ========================================= */
+
+  /* Ombres */
+  --shadow-accent: 0 10px 24px rgba(239, 107, 45, .25);
+  --shadow-md: 0 10px 24px rgba(0, 0, 0, .12);
+
+  /* Transitions */
+  --transition: .3s ease;
+
+  /* Durées */
+  --duration-fast: .25s;
+  --duration-normal: .4s;
+
+  /* Easings */
+  --ease-standard: ease;
+  --ease-out: ease-out;
+
+  /* =========================================
+    ESPACEMENTS
+  ========================================= */
+
+  /* Espacements */
+  --space-xs: .5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* =========================================
+    DIMENSIONS
+  ========================================= */
+
+  /* Largeur */
+  --container-width: 1280px;
+  --content-sm: 420px;
+  --content-md: 520px;
+  --content-lg: 650px;
+
+  /* Layout */
+  --header-height: 132px;
+
+  /* Radius */
+  --radius-pill: 999px;
+
+  /* =========================================
+    COUCHES
+  ========================================= */
+
+  /* Couches */
+  --z-header: 100;
+
+  /* =========================================
+    BREAKPOINTS
+  ========================================= */
+
+  /* Breakpoints officiels (documentation) */
+  --bp-mobile: 480px;
+  --bp-tablet: 900px;
+  --bp-desktop: 1200px;
+}

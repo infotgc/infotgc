@@ -1,0 +1,16 @@
+{
+  "name": "TGC",
+  "short_name": "TGC",
+  "description": "Développeur web, mobile et logiciel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F6F1",
+  "theme_color": "#F8F6F1",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/* =========================================
+   NOT FOUND
+========================================= */
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: clamp(5rem, 10vw, 8rem);
+}
+
+.not-found h2 {
+  margin-bottom: var(--space-md);
+}
+
+.not-found p {
+  margin-bottom: var(--space-xl);
+}
+
+.not-found .btn {
+  align-self: center;
+}

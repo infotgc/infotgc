@@ -1,0 +1,62 @@
+---
+import Section from "../Section/Section.astro";
+import Icon from "../Icons/Icons.astro";
+import Image from "astro/components/Image.astro";
+import contactImage from "../../assets/contact.png";
+---
+
+<Section id="contact" class="contact">
+
+  <div class="contact__wrapper">
+
+    <div class="contact__content">
+
+      <h2>Un projet en tête&nbsp;?</h2>
+
+      <p>
+        Parlons de vos besoins.
+        Ensemble, nous imaginerons une solution métier
+        performante, durable et adaptée à votre activité.
+      </p>
+
+      <div class="contact__infos">
+
+        <a
+          class="contact__linkedin"
+          href="https://www.linkedin.com/in/tgc-developpement/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Voir le profil LinkedIn de TGC (nouvel onglet)"
+        >
+          <Icon name="linkedin" size={24} />
+          <span>Retrouvez-moi sur LinkedIn</span>
+        </a>
+
+        <a href="mailto:contact@infotgc.fr">
+          Écrire à contact@infotgc.fr
+        </a>
+
+      </div>
+
+      <a class="btn" href="mailto:contact@infotgc.fr">
+        Envoyer un message →
+      </a>
+
+    </div>
+
+    <div class="contact__image">
+
+      <Image
+        src={contactImage}
+        alt="Poste de travail pour échanger autour d'un projet numérique"
+        width="444"
+        height="289"
+        loading="lazy"
+        decoding="async"
+      />
+
+    </div>
+
+  </div>
+
+</Section>

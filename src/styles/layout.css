@@ -1,0 +1,25 @@
+/* =========================================
+   LAYOUT
+========================================= */
+
+body {
+  background: var(--color-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  width: min(var(--container-width), 92%);
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}

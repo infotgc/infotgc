@@ -1,0 +1,47 @@
+---
+import Image from "astro/components/Image.astro";
+import logoImage from "../../assets/logo.png";
+---
+
+<header class="header">
+  <div class="container header">
+    <div class="header__logo">
+      <a href="#hero" data-link="hero">
+        <Image
+          src={logoImage}
+          alt="Logo TGC"
+          width="54"
+          height="76"
+        />
+      </a>
+    </div>
+
+    <button
+      type="button"
+      class="header__toggle"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <nav
+      id="main-nav"
+      class="header__nav"
+      aria-label="Navigation principale"
+    >
+      <a href="#hero" data-link="hero">Accueil</a>
+      <a href="#services" data-link="services">Services</a>
+      <a href="#approche" data-link="approche">Mon approche</a>
+      <a href="#pourquoi-moi" data-link="pourquoi-moi">Pourquoi moi</a>
+      <a href="#contact" data-link="contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="header__cta" data-link="contact">
+      Discutons de votre projet
+    </a>
+  </div>
+</header>

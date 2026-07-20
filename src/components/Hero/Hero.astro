@@ -1,0 +1,61 @@
+---
+import Section from "../Section/Section.astro";
+import Image from "astro/components/Image.astro";
+import heroImage from "../../assets/hero-laptop.png";
+---
+
+<Section id="hero" class="hero">
+
+  <div class="hero__wrapper">
+
+    <div class="hero__content">
+
+      <span class="hero__subtitle">
+        Créateur de solutions digitales
+      </span>
+
+      <h1 class="hero__title">
+          Le code
+          <br />
+          au service
+          <br />
+          de vos <span>idées</span>
+      </h1>
+
+      <p class="hero__text hero__text--desktop">
+        Je conçois des solutions web, mobiles et logicielles<br>
+        qui répondent à vos besoins métier avec simplicité,<br>
+        performance et élégance.
+      </p>
+
+      <p class="hero__text hero__text--mobile">
+        Je conçois des solutions web, mobiles et logicielles 
+        qui répondent à vos besoins métier avec simplicité, 
+        performance et élégance.
+      </p>
+
+      <a href="#services" data-link="services" class="btn">
+        Voir mes services ?
+      </a>
+
+    </div>
+
+    <div class="hero__image">
+
+      <Image
+        src={heroImage}
+        alt="Développement d'une solution web sur ordinateur portable"
+        widths={[400, 600, 800, 1200]}
+        sizes="(max-width: 900px) 100vw, 520px"
+        format="webp"
+        quality={85}
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+
+    </div>
+
+  </div>
+
+</Section>

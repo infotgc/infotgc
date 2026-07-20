@@ -1,0 +1,23 @@
+/* =========================================
+   MENTIONS LEGALES
+========================================= */
+
+.legal {
+  width: 100%;
+}
+
+.legal h2 {
+  margin-bottom: 3rem;
+}
+
+.legal section {
+  margin-bottom: var(--space-md);
+}
+
+.legal h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.legal p {
+  max-width: 120ch;
+}

@@ -1,0 +1,114 @@
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: var(--content-md);
+}
+
+.hero__subtitle {
+  color: #D95A20;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: .15em;
+  margin-bottom: var(--space-lg);
+}
+
+.hero__title {
+  font-size: clamp(3rem, 6vw, var(--space-2xl));
+  line-height: .95;
+  font-weight: 500;
+  max-width: var(--content-lg);
+}
+
+.hero__title span {
+  color: var(--color-accent-dark);
+}
+
+.hero__text {
+  margin-top: var(--space-lg);
+  max-width: var(--content-sm);
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+.hero__text--mobile {
+  display: none;
+}
+
+.hero .btn {
+  align-self: flex-start;
+  margin-top: 3rem;
+}
+
+/* =========================================
+   TABLETTE + MOBILE PAYSAGE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+	.hero {
+	  padding: 4rem 0;
+	}
+
+  .hero__content {
+    text-align: center;
+  }
+
+	.hero__text {
+	  margin-inline: auto;
+	}
+
+	.hero__image {
+	  order: -1;
+	}
+
+}
+
+/* =========================================
+   MOBILE PORTRAIT
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero__text--desktop {
+    display: none;
+  }
+
+  .hero__text--mobile {
+    display: block;
+  }
+
+}
